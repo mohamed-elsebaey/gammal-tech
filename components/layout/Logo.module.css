@@ -1,0 +1,25 @@
+.navbarBrand {
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+  font-weight: bold;
+
+}
+
+.navbarLogo {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+.navbarTitle {
+  float: none;
+  clear: none;
+  color: teal;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
