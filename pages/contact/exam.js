@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 function Exam(props) {
   const router = useRouter();
-  
+
   async function addStudentHandler(enteredStudentDetails) {
     const response = await fetch("/api/student-details", {
       method: "POST",
@@ -14,6 +14,7 @@ function Exam(props) {
       },
     });
     const data = await response.json();
+    router.push("/");
   }
   return (
     <>

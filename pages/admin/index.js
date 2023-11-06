@@ -4,7 +4,7 @@ import StudentList from "@/components/studentsItem/StudentsList";
 function Admin(props) {
   return (
     <>
-      <BodyHeader title="Student Deatail List" />
+      <BodyHeader title="Students Deatail " />
       <StudentList data={props.studentsData} />
     </>
   );
