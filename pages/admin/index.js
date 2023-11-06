@@ -10,7 +10,7 @@ function Admin(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const client = await MongoClient.connect(
     "mongodb+srv://elsebaey95:535199@cluster0.ozqqrmz.mongodb.net/studentDetails?retryWrites=true&w=majority"
   );
@@ -32,7 +32,6 @@ export async function getStaticProps() {
         status: studentData.status,
       })),
     },
-    revalidate: 1,
   };
 }
 
