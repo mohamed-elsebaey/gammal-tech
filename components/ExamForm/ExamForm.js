@@ -56,7 +56,7 @@ function ExamForm(props) {
           />
         </div>
         <div className={classes.control}>
-          <label htmlFor="email">Email Adress:</label>
+          <label htmlFor="email">Email Address:</label>
           <input
             type="email"
             id="email"

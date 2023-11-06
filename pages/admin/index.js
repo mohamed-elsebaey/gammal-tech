@@ -2,6 +2,7 @@ import { MongoClient } from "mongodb";
 import BodyHeader from "@/components/ui/BodyHeader";
 import StudentList from "@/components/studentsItem/StudentsList";
 function Admin(props) {
+
   return (
     <>
       <BodyHeader title="Students Deatail " />
@@ -25,7 +26,7 @@ export async function getServerSideProps(context) {
         phone: studentData.id,
         fullName: studentData.fullName,
         age: studentData.age,
-        emailAdress: studentData.emailAdress,
+        emailAddress: studentData.emailAddress,
         address: studentData.address,
         whatsApp: studentData.whatsApp,
         course: studentData.course,

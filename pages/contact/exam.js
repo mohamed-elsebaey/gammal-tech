@@ -40,7 +40,7 @@ export async function getStaticProps() {
         phone: studentData.id,
         fullName: studentData.fullName,
         age: studentData.age,
-        emailAdress: studentData.emailAdress,
+        emailAddress: studentData.emailAddress,
         address: studentData.address,
         whatsApp: studentData.whatsApp,
         course: studentData.course,
