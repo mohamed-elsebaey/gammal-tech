@@ -1,8 +1,11 @@
+import { useRouter } from "next/router";
 import { useRef } from "react";
 import Card from "../ui/Card";
 import classes from "./ExamForm.module.css";
 
 function ExamForm(props) {
+  const router = useRouter();
+
   const fullNameInputRef = useRef();
   const emailAddressInputRef = useRef();
   const ageInputRef = useRef();
@@ -25,6 +28,7 @@ function ExamForm(props) {
     const enteredStatus = statusSelectedRef.current.value;
 
     const studentData = {
+      id: enteredPhone,
       fullName: enteredFullName,
       emailAdress: enteredEmailAdress,
       age: enteredAge,

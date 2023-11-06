@@ -1,30 +1,16 @@
 import { MongoClient } from "mongodb";
-import ExamForm from "@/components/ExamForm/ExamForm";
-import { useRouter } from "next/router";
-
-function Exam(props) {
-  const router = useRouter();
-  
-  async function addStudentHandler(enteredStudentDetails) {
-    const response = await fetch("/api/student-details", {
-      method: "POST",
-      body: JSON.stringify(enteredStudentDetails),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await response.json();
-  }
+import BodyHeader from "@/components/ui/BodyHeader";
+import StudentList from "@/components/studentsItem/StudentsList";
+function Admin(props) {
   return (
     <>
-      <ExamForm onAddStudent={addStudentHandler} />
+      <BodyHeader title="Student Deatail List" />
+      <StudentList data={props.studentsData} />
     </>
   );
 }
 
-//this code is executed during the build process
 export async function getStaticProps() {
-  //fetch data from an api / data base
   const client = await MongoClient.connect(
     "mongodb+srv://elsebaey95:535199@cluster0.ozqqrmz.mongodb.net/studentDetails?retryWrites=true&w=majority"
   );
@@ -49,4 +35,5 @@ export async function getStaticProps() {
     revalidate: 1,
   };
 }
-export default Exam;
+
+export default Admin;
