@@ -19,7 +19,7 @@ function ExamForm(props) {
   function submitHandler(event) {
     event.preventDefault();
     const enteredFullName = fullNameInputRef.current.value;
-    const enteredEmailAdress = emailAddressInputRef.current.value;
+    const enteredEmailAddress = emailAddressInputRef.current.value;
     const enteredAge = ageInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
     const enteredPhone = phoneInputRef.current.value;
@@ -30,7 +30,7 @@ function ExamForm(props) {
     const studentData = {
       id: enteredPhone,
       fullName: enteredFullName,
-      emailAdress: enteredEmailAdress,
+      emailAddress: enteredEmailAddress,
       age: enteredAge,
       address: enteredAddress,
       phone: enteredPhone,
