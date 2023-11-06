@@ -5,7 +5,7 @@ function Admin(props) {
 
   return (
     <>
-      <BodyHeader title="Students Deatail " />
+      <BodyHeader title="Students Details " />
       <StudentList data={props.studentsData} />
     </>
   );
