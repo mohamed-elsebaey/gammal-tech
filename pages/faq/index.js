@@ -1,10 +1,5 @@
-import Layout from "@/components/layout/Layout";
-import BodyHeader from '../../components/ui/BodyHeader'
+import BodyHeader from "../../components/ui/BodyHeader";
 function FAQ() {
-  return (
-    <Layout>
-      <BodyHeader title='FAQ'/>
-    </Layout>
-  );
+  return <BodyHeader title="FAQ" />;
 }
 export default FAQ;

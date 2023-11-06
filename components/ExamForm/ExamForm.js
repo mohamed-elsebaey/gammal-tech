@@ -1,5 +1,4 @@
 import { useRef } from "react";
-
 import Card from "../ui/Card";
 import classes from "./ExamForm.module.css";
 
@@ -11,6 +10,9 @@ function ExamForm(props) {
   const phoneInputRef = useRef();
   const whatsAppInputRef = useRef();
 
+  const sourceSelectedRef = useRef();
+  const statusSelectedRef = useRef();
+
   function submitHandler(event) {
     event.preventDefault();
     const enteredFullName = fullNameInputRef.current.value;
@@ -19,6 +21,8 @@ function ExamForm(props) {
     const enteredAddress = addressInputRef.current.value;
     const enteredPhone = phoneInputRef.current.value;
     const enteredWhatsApp = whatsAppInputRef.current.value;
+    const enteredCourse = sourceSelectedRef.current.value;
+    const enteredStatus = statusSelectedRef.current.value;
 
     const studentData = {
       fullName: enteredFullName,
@@ -27,9 +31,11 @@ function ExamForm(props) {
       address: enteredAddress,
       phone: enteredPhone,
       whatsApp: enteredWhatsApp,
+      course: enteredCourse,
+      status: enteredStatus,
     };
 
-    props.onAddStudents(studentData);
+    props.onAddStudent(studentData);
   }
 
   return (
@@ -92,6 +98,28 @@ function ExamForm(props) {
           </div>
         </div>
         <div className={classes.control}>
+          <label htmlFor="courses">Select The Course:</label>
+          <select
+            id="select-course"
+            name="select-course"
+            ref={sourceSelectedRef}
+          >
+            <option value="c-programming">C Programming</option>
+            <option value="cpp-programming">C++ Programming</option>
+            <option value="data-structures">Data Structures</option>
+            <option value="algorithms">Algorithms</option>
+            <option value="oop">OOP</option>
+          </select>
+        </div>
+        <div className={classes.control}>
+          <label htmlFor="status">Status:</label>
+          <select id="exam-status" name="exam-status" ref={statusSelectedRef}>
+            <option value="first-time">First time</option>
+            <option value="redo1">Redo 1</option>
+            <option value="redo2">Redo 2</option>
+          </select>
+        </div>
+        <div className={classes.control}>
           <label htmlFor="address:">Address</label>
           <input
             type="text"
@@ -102,7 +130,7 @@ function ExamForm(props) {
           />
         </div>
         <div className={classes.actions}>
-          <button>Add Meetup</button>
+          <button>Send</button>
         </div>
       </form>
     </Card>

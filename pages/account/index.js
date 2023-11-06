@@ -1,10 +1,5 @@
-import Layout from "@/components/layout/Layout";
-import BodyHeader from '../../components/ui/BodyHeader'
+import BodyHeader from "../../components/ui/BodyHeader";
 function Account() {
-  return (
-    <Layout>
-      <BodyHeader title='Account Details'/>
-    </Layout>
-  );
+  return <BodyHeader title="Account Details" />;
 }
 export default Account;

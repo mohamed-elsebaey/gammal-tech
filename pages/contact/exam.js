@@ -1,14 +1,9 @@
 import ExamForm from "@/components/ExamForm/ExamForm";
-import Layout from "@/components/layout/Layout";
 
 function Exam() {
-  const addStudentHandler = (studentData) => {
-    console.log(studentData);
+  const addStudentHandler = (data) => {
+    console.log(data);
   };
-  return (
-    <Layout>
-      <ExamForm onAddStudent={addStudentHandler} />
-    </Layout>
-  );
+  return <ExamForm onAddStudent={addStudentHandler} />;
 }
 export default Exam;
