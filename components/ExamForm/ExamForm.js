@@ -134,7 +134,7 @@ function ExamForm(props) {
           />
         </div>
         <div className={classes.actions}>
-          <button>Send</button>
+          <button disabled={classes.disabled}>Send</button>
         </div>
       </form>
     </Card>

@@ -1,10 +1,14 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import BodyHeader from "@/components/ui/BodyHeader";
 import StudentList from "@/components/studentsItem/StudentsList";
 function Admin(props) {
-
   return (
     <>
+      <Head>
+        <title>Gammal Tech Admin</title>
+        <meta name="description" content="gammal tech admin" />
+      </Head>
       <BodyHeader title="Students Details " />
       <StudentList data={props.studentsData} />
     </>

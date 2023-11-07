@@ -48,3 +48,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.disabled{
+  cursor: none;
+  background-color: gray;
+}
