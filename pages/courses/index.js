@@ -7,7 +7,7 @@ function Courses() {
         <title>Courses</title>
         <meta name="description" content="gammal tech Courses" />
       </Head>
-      <BodyHeader title="Courses" />;
+      <BodyHeader title="Courses" />
     </>
   );
 }

@@ -7,7 +7,7 @@ function Account() {
         <title>My Account</title>
         <meta name="description" content="gammal tech users account" />
       </Head>
-      <BodyHeader title="Account Details" />;
+      <BodyHeader title="Account Details" />
     </>
   );
 }

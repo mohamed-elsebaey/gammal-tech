@@ -25,7 +25,7 @@ function MainNavigation() {
         </ul>
         <div className={classes.btn}>
           <Link href="/account">
-            My Account
+            Account
           </Link>
         </div>
       </nav>

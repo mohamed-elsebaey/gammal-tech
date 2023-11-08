@@ -12,7 +12,8 @@
   margin-bottom: 0.5rem;
 }
 
-.control input , .control select{
+.control input,
+.control select {
   display: block;
   font: inherit;
   border-radius: 4px;
@@ -49,3 +50,13 @@
   justify-content: space-between;
 }
 
+@media (max-width: 575.98px) {
+  .form {
+    padding: 0.8rem;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,16 +1,23 @@
-.bHeader{
-    color: white;
-    background-color: rgba(0,0,0,.85);
-    border-radius: 5px;
-    text-align: center;
-    align-self: stretch;
-    margin: 0 -10px 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Montserrat,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 70px;
-    box-shadow: 0 3px 3px rgba(0,0,0,.5);
-    margin-bottom: 20px;
+.bHeader {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  text-align: center;
+  align-self: stretch;
+  margin: 0 -10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .bHeader {
+    font-size: 22px;
+    line-height: 50px;
+  }
 }

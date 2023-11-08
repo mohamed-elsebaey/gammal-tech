@@ -54,3 +54,18 @@
   background-color: rgb(11, 121, 121);
   border-color: teal;
 }
+
+@media (max-width: 575.98px) {
+
+  .content h3 {
+    font-size: 16px;
+    color: #2c292b;
+  }
+
+
+  .actions button {
+    width: 95%;
+    border-radius: 6px;
+    font-weight: inherit;
+  }
+}

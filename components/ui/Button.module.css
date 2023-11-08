@@ -20,3 +20,16 @@
 .button:active {
   background-color: rgb(36, 35, 35);
 }
+@media (max-width: 575.98px) {
+  .actions {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
